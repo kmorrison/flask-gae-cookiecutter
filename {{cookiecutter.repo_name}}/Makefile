@@ -10,4 +10,4 @@ build:
 	pip install -r requirements.txt -t lib/
 
 deploy: clean build
-	appcfg.py -A {{cookie_cutter.appengine_project_id}} --oauth2 update .
+	appcfg.py -A {{cookiecutter.appengine_project_id}} --oauth2 update .
