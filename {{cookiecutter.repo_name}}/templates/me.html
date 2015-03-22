@@ -1,5 +1,6 @@
-{% extends 'base.html' %}
+{% raw %}{% extends 'base.html' %}
 
 {% block content %}
-    <div> Hi {{user.nickname}}! </div>
+    <div> Hi {{user.nickname()}}! </div>
 {% endblock %}
+{% endraw %}

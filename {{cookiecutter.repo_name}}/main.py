@@ -12,15 +12,15 @@ app = Flask(__name__)
 # Note: We don't need to call run() since our application is embedded within
 # the App Engine WSGI application server.
 
-app_name = {{cookiecutter.repo_name}}
+APP_NAME = '{{cookiecutter.repo_name}}'
 
 
 @app.route('/')
 def home():
     """Return a friendly HTTP greeting."""
     return flask.render_template(
-        'index.html',
-        title=app_name,
+        'home.html',
+        title=APP_NAME,
     )
 
 
@@ -29,7 +29,7 @@ def home():
 def me():
     return flask.render_template(
         'me.html',
-        title=app_name,
+        title=APP_NAME,
         user=users.get_current_user(),
     )
 
