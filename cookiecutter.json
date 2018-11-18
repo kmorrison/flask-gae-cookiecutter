@@ -3,6 +3,6 @@
     "email": "example@example.com",
     "appengine_project_id": "your-project-id",
     "repo_name": "",
-    "company_domain (optional, for auth decorator)": "google.com",
+    "company_domain": "(optional, for auth decorator) google.com",
     "project_short_description": "It's like Uber, but for shampoo."
 }
