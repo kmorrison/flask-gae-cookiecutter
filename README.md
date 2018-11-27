@@ -10,12 +10,17 @@ A skeleton for building Python applications on Google App Engine with the
 2. Install the [App Engine Python SDK](https://developers.google.com/appengine/downloads).
 See the README file for directions. You'll need python 2.7 and [pip 1.4 or later](http://www.pip-installer.org/en/latest/installing.html) installed too.
 
-3. Clone this repo with
+3. install `cookiecutter`
+
+    ```
+    pip install cookiecutter
+    ```
+4. Clone this repo with
 
    ```
    cookiecutter https://github.com/kmorrison/flask-gae-cookiecutter.git
    ```
-4. Follow instructions in your new project's README :)
+5. Follow instructions in your new project's README :)
 
 ### Relational Databases and Datastore
 Appengine gives you a lot of stuff for free if you're willing to do it their
